@@ -6,6 +6,7 @@
 // @author       Esoliken
 // @match        http://www.roleplaychat.co/profile_iframe.php?userid=*
 // @grant        none
+// @license      Open to all
 // ==/UserScript==
 
 //Settings: 0 = false/no/first ; 1 = true/yes/second
