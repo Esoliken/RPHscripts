@@ -6,7 +6,6 @@
 // @author       Esoliken
 // @match        http://www.roleplaychat.co/profile_iframe.php?userid=*
 // @grant        none
-// @license      Open to all
 // ==/UserScript==
 
 //Settings: 0 = false/no/first ; 1 = true/yes/second
@@ -14,7 +13,10 @@ var settings = [1]; //create element or console.log
 
 if(document.oncontextmenu){
     //undos the anti-right blocks
+    var supremeAss = "n ";
     document.oncontextmenu = (function(){return true;});
+    $(document).off("mousedown");
+    supremeAss = ($("head script")[3].innerText.indexOf("alert(") > 0? " <strong>SUPREME</strong> " : "n ");
 
     if(settings[0]){
         console.log("The deny-deny right-click script activated.");
@@ -30,7 +32,7 @@ if(document.oncontextmenu){
                  "padding: 2px; color: white; font-weight: bold; text-align: center;";
         drcs.innerHTML = "<p style=\"position: absolute; bottom: 0px; text-align: " +
                  "center; width: 100%;\">The deny-deny right-click script activated. " +
-                 "This person might be an asshole.</p>";
+                 "This person might be a" + supremeAss + "asshole.</p>";
         drcs.style.left = ((window.innerWidth - 810)/2) + "px";
         docs.appendChild(drcs);
     }
