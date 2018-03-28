@@ -5,7 +5,7 @@
 // @description  RPH block right-click-blockers
 // @author       Esoliken
 // @match        http://www.roleplaychat.co/profile_iframe.php?userid=*
-// @grant        none
+// @grant        Free to all
 // ==/UserScript==
 
 //Settings: 0 = false/no/first ; 1 = true/yes/second
